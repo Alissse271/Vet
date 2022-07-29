@@ -1,0 +1,161 @@
+.about-comp-section .about-comp-info .block-comp-info > a, .about-comp-section .nav-number-active a, .about-comp-section .nav-number a, .header-location p, .header-nav a {
+  font-weight: 700;
+  font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
+  line-height: 100%;
+}
+
+body {
+  font-family: "Futura New", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1760px;
+  margin: 65px 80px 0;
+}
+.header > a {
+  pointer-events: none;
+  cursor: default;
+  max-width: 100px;
+  max-height: 100px;
+}
+.header > a img {
+  width: 100%;
+  height: 100%;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav a {
+  color: #C3B9B5;
+}
+.header-nav a:not(:last-child) {
+  padding-right: 80px;
+}
+.header-location {
+  display: flex;
+  align-items: center;
+}
+.header-location img {
+  width: 46px;
+  height: 46px;
+}
+.header-location p {
+  color: #FFC59E;
+}
+
+.about-comp-section {
+  display: flex;
+  max-width: 1920px;
+}
+.about-comp-section .nav {
+  width: 40px;
+  margin-left: 110px;
+  margin-top: 130px;
+}
+.about-comp-section .nav-number a {
+  font-size: 20px;
+  color: #C3B9B5;
+}
+.about-comp-section .nav-number:not(:last-child) {
+  padding: 0 14px 70px;
+}
+.about-comp-section .nav-number:last-child {
+  padding: 0 14px 10px;
+}
+.about-comp-section .nav-number-active {
+  width: 40px;
+  height: 40px;
+  background-image: url("/nav-ellipse.044d130b.svg");
+  margin-bottom: 60px;
+  padding: 10px 14px;
+}
+.about-comp-section .nav-number-active a {
+  font-size: 20px;
+  color: #080606;
+}
+.about-comp-section .about-comp-info {
+  display: flex;
+  margin-left: 14.402173913%;
+}
+.about-comp-section .about-comp-info .block-comp-info {
+  position: relative;
+  max-width: 645px;
+  margin-top: 151px;
+}
+.about-comp-section .about-comp-info .block-comp-info .comp-name {
+  font-family: "SchoolBook Cyrillic", sans-serif;
+  font-size: calc(24px + 56 * ((100vw - 320px) / 1600));
+  line-height: 138%;
+}
+.about-comp-section .about-comp-info .block-comp-info > a {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 197px;
+  background: #FFC59E;
+  box-shadow: 0px 4px 20px #FFC59E;
+  border-radius: 33.5px;
+  min-height: 67px;
+  font-size: 20px;
+  color: #fff;
+  padding: 24px 77px;
+  max-width: 285px;
+  text-align: center;
+}
+.about-comp-section .about-comp-info .block-comp-info .comp-info-social {
+  margin-bottom: 80px;
+}
+.about-comp-section .about-comp-info .block-comp-info .comp-info-social a {
+  width: 40px;
+  height: 40px;
+}
+.about-comp-section .about-comp-info .block-comp-info .comp-info-social a:not(:last-child) {
+  padding-right: 50px;
+}
+.about-comp-section .about-comp-info .block-comp-info > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  visibility: hidden;
+}
+.about-comp-section .about-comp-info .block-comp-contact {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 26px;
+  max-width: 833px;
+  max-height: 786px;
+  margin-top: 130px;
+}
+.about-comp-section .about-comp-info .block-comp-contact .block-comp-contact-image img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+.about-comp-section .about-comp-info .block-comp-contact .phone-number {
+  position: absolute;
+  right: 79px;
+  bottom: 80px;
+}
+.about-comp-section .about-comp-info .block-comp-contact .phone-number p {
+  color: #59443F;
+  font-weight: 700;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  line-height: 125%;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

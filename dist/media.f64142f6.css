@@ -1,0 +1,104 @@
+@media (max-width: 1280px) {
+  .header {
+    margin: 35px 50px 0;
+  }
+  .header-nav a:not(:last-child) {
+    padding-right: 40px;
+  }
+  .about-comp-section .nav {
+    margin-left: 90px;
+    margin-top: 70px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info {
+    margin-top: 90px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info > a {
+    margin-bottom: 100px;
+  }
+  .about-comp-section .about-comp-info .block-comp-contact {
+    margin-top: 70px;
+  }
+  .about-comp-section .about-comp-info .block-comp-contact .phone-number {
+    right: 49px;
+    bottom: 40px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info .comp-info-social {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1008px) {
+  .header > a {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .header-nav {
+    display: none;
+  }
+  .about-comp-section .nav {
+    margin-left: 90px;
+    margin-top: 40px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info {
+    margin-top: 60px;
+  }
+  .about-comp-section .nav-number-active {
+    margin-bottom: 30px;
+  }
+  .about-comp-section .nav-number:not(:last-child) {
+    padding: 0px 14px 40px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info .comp-info-social {
+    margin-bottom: 20px;
+  }
+  .about-comp-section .about-comp-info .block-comp-info .comp-info-social a:not(:last-child) {
+    padding-right: 30px;
+  }
+  .about-comp-section .about-comp-info .block-comp-contact {
+    margin-top: 40px;
+  }
+  .about-comp-section .about-comp-info .block-comp-contact .phone-number {
+    right: 24px;
+    bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .about-comp-section .about-comp-info .block-comp-info > img {
+    visibility: visible;
+  }
+  .about-comp-section .about-comp-info .block-comp-contact {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin: 15px 30px 0;
+  }
+  .about-comp-section {
+    flex-direction: column-reverse;
+  }
+  .about-comp-section .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .about-comp-section .nav-number {
+    margin-right: 20px;
+  }
+  .about-comp-section .nav-number:not(:last-child) {
+    padding: 10px 14px 0;
+  }
+  .about-comp-section .nav-number:last-child {
+    padding: 10px 14px 0;
+  }
+  .about-comp-section .nav-number-active {
+    margin-bottom: 0;
+  }
+  .about-comp-section .about-comp-info .block-comp-info {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=/media.f64142f6.css.map */

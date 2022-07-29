@@ -1,0 +1,21 @@
+// Colors
+$brown-light: #C3B9B5;
+$orange: #FFC59E;
+$black-text: #080606;
+$brown: #59443F;
+
+// Адаптивный шрифт
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+%tplstyle-sect-about-comp {
+    font-weight: 700;
+    // font-size: 20px;
+    @include adaptiv-font (20, 12);
+    line-height: 100%;
+}
+
