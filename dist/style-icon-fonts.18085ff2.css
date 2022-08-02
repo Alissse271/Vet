@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("/icomoon.e29465d9.eot?vfvutg");
+  src: url("/icomoon.e29465d9.eot?vfvutg#iefix") format("embedded-opentype"), url("/icomoon.d688ff9f.ttf?vfvutg") format("truetype"), url("/icomoon.995bcc90.woff?vfvutg") format("woff"), url("/icomoon.2686ebf5.svg?vfvutg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.service-icons {
+  font-size: 110px;
+  color: #FFC59E;
+}
+
+.icon-service-icon1:before {
+  content: "\e900";
+  color: #ffc59e;
+}
+.icon-service-icon1:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon2:before {
+  content: "\e901";
+  color: #ffc59e;
+}
+.icon-service-icon2:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon3:before {
+  content: "\e902";
+  color: #ffc59e;
+}
+.icon-service-icon3:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon4:before {
+  content: "\e903";
+  color: #ffc59e;
+}
+.icon-service-icon4:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon5:before {
+  content: "\e904";
+  color: #ffc59e;
+}
+.icon-service-icon5:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon6:before {
+  content: "\e905";
+  color: #ffc59e;
+}
+.icon-service-icon6:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon7:before {
+  content: "\e906";
+  color: #ffc59e;
+}
+.icon-service-icon7:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon8:before {
+  content: "\e907";
+  color: #ffc59e;
+}
+.icon-service-icon8:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon9:before {
+  content: "\e908";
+  color: #ffc59e;
+}
+.icon-service-icon9:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon10:before {
+  content: "\e909";
+  color: #ffc59e;
+}
+.icon-service-icon10:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon11:before {
+  content: "\e90a";
+  color: #ffc59e;
+}
+.icon-service-icon11:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon12:before {
+  content: "\e90b";
+  color: #ffc59e;
+}
+.icon-service-icon12:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon13:before {
+  content: "\e90c";
+  color: #ffc59e;
+}
+.icon-service-icon13:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon14:before {
+  content: "\e90d";
+  color: #ffc59e;
+}
+.icon-service-icon14:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon15:before {
+  content: "\e90e";
+  color: #ffc59e;
+}
+.icon-service-icon15:hover::before {
+  color: #59443F;
+}
+
+.icon-service-icon16:before {
+  content: "\e90f";
+  color: #ffc59e;
+}
+.icon-service-icon16:hover::before {
+  color: #59443F;
+}
+
+/*# sourceMappingURL=/style-icon-fonts.18085ff2.css.map */

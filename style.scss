@@ -4,6 +4,7 @@ body {
     font-family: 'Futura New', sans-serif;
     max-width: 1920px;
     margin: 0 auto;
+
 }
 
 section {
@@ -61,7 +62,7 @@ section {
 .about-comp-section {
     display: flex;
     max-width: 1920px;
-
+    
     .nav {
         width: 40px;
         margin-left: 110px;
@@ -101,7 +102,7 @@ section {
 
     .about-comp-info {
         display: flex;
-        margin-left: 265px / 1840px * 100%;  
+        margin-left: calc(265px / 1840px * 100%);  
 
         .block-comp-info {
             position: relative;
@@ -196,4 +197,519 @@ section {
     }
 }
 
+.cards-container {
+    margin: 150px auto;
+    max-width: 1352px;
 
+    .services-card-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -12px;
+
+            &:hover + i {
+                color: $brown;
+            }
+    }
+
+    .services-card {
+        position: relative;
+        max-width: 320px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 24px;  
+        // width: 25%;
+        flex: 1 1 25%;
+        margin: 12px;
+        
+        &-info {
+            display: flex;
+            flex-direction: column; 
+            
+        }
+
+        &-title {
+            font-family: 'SchoolBook';
+            font-size: 30px;
+            line-height: 133%;
+            color: $brown;
+            padding-bottom: 22px;
+        }
+
+        &-subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            p {
+                font-size: 20px;
+                line-height: 100%;
+                color: $brown;   
+            }
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:hover + .service-icons {
+                color: $brown;
+            }
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // bottom: 0;
+            // z-index: 1;
+        }
+    }
+
+
+}
+
+.comp-history-section {
+    max-width: 1920px;
+    background: #FBF8F8;
+
+    .comp-history-container {
+        max-width: 1254px;
+        margin: 0 auto;
+
+        h1 {
+            font-family: 'SchoolBook';
+            font-size: 40px;
+            line-height: 100%;
+            text-align: center;
+            color: $black-text;
+            padding-bottom: 48px;
+        }
+
+        .history-container-link {
+            display: flex;
+
+            & > p {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                color: $orange;
+                padding-right: 10px;
+            }
+
+            & > img {
+                width: 10px;
+                height: 20px;
+            }
+        }
+
+        .comp-history-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 180px 0 100px;
+
+            & > p {
+                max-width: 497px;
+                color: $brown;
+                font-size: 20px;
+                line-height: 150%;
+                padding-bottom: 36px;
+            }
+        }
+
+        .comp-specialists-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0 206px;
+
+            .specialists {
+                display: flex;
+                align-items: center;
+                padding-bottom: 36px;
+
+                & > a {
+                    max-width: 178px;
+                    // flex: 1 1 auto;
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0;  
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.work-time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 316px auto;
+
+    h1 {
+        font-family: 'SchoolBook';
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 76%;
+        color: $brown;
+        padding-bottom: 20px;
+    }
+
+    p {
+        
+        max-width: 716px;
+        font-size: 80px;
+        line-height: 138%;
+        color: $black-text;
+    }
+
+    img {
+        position: absolute;
+        bottom: -157px;
+        right: 645px;
+    }
+}
+
+.advantages-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    max-width: 1640px;
+    margin: 0 auto 239px;
+
+    h1 {
+        font-family: 'SchoolBook';
+        font-size: 40px;
+        line-height: 100%;
+        color: $black-text;
+        padding-bottom: 104px;
+    }
+
+    .adv-cards-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10px;
+
+        .adv-card {
+            flex: 1 1 auto;
+            width: 33.333%;
+            max-width: 484px;
+            margin-right: 84px;
+            margin-bottom: 70px;
+
+            &:nth-child(3n) {
+                margin-right: 0px;   
+            }
+
+            &-title h2 {
+                font-family: 'SchoolBook';
+                font-size: 30px;
+                line-height: 138%;
+                color: $black-text;
+                padding-bottom: 36px;
+            }
+
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                
+
+                p {
+                    max-width: 330px;
+                    min-height: 150px;
+                    color: $brown;
+                    font-size: 20px;
+                    line-height: 150%;
+                }
+
+                img {
+                    align-self: center;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+.new-app-section {
+    background: $orange;
+
+    &-container {
+        position: relative;
+        padding-top: calc(350px / 1920px * 100%);
+
+        .new-app-info {
+            margin-left: calc(230px / 1920px * 100%);
+            padding-bottom: calc(346px / 1920px * 100%);
+
+            p {
+                font-size: 30px;
+                line-height: 67%;
+                color: #fff;
+            }
+
+            h1 {
+                max-width: 826px;
+                //  1840px media max-width: 706px;
+                font-family: 'SchoolBook';
+                @include adaptiv-font (80, 24);
+                line-height: 138%;
+                color: #fff;
+                padding-bottom: 30px;
+            }
+
+            .new-app-install {
+                display: flex;
+                align-items: center;
+
+                &> :not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .dog-img {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 170px;
+            right: calc(506px / 1920px * 100%);
+            max-width: 493px;
+
+            img {
+
+                // media 70%
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .app-phone-img {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 113px;
+            right: calc(274px / 1920px * 100%);
+            max-width: 425px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }  
+        }
+    }
+}
+
+.contacts-section-container {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 235px 10px 209px;
+
+    h1 {
+        font-family: 'SchoolBook';
+        @include adaptiv-font (40, 24);
+        line-height: 100%;
+        color: $black-text;
+        padding-bottom: 70px;
+    }
+
+    .contacts-block {
+        display: flex;
+        justify-content: space-between;
+
+        &-info {
+            flex: 0 0 auto;
+            max-width: 484px;
+            padding-right: 26px;
+
+            &-content {
+                padding-bottom: 40px;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                h2 {
+                    font-family: 'SchoolBook';
+                    @include adaptiv-font (30, 20);
+                    line-height: 133%;
+                    color: $black-text; 
+                    padding-bottom: 20px;
+                }
+
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    max-width: 384px;
+                    padding-bottom: 15px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                    
+
+                    img {
+                        width: 46px;
+                        height: 46px;
+                        margin-right: 20px;
+                    }
+
+                    p {
+                        @include adaptiv-font (20, 16);
+                        line-height: 150%;
+                        color: $brown; 
+                    }
+                }
+            }
+        }
+
+        .contacts-block-map {
+
+            .map-card {
+                position: relative;
+                max-width: 950px;
+
+                > img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .yandex-location-link {
+                    position: absolute;
+                    display: inline-block;
+                    display: flex;
+                    align-items: center;
+                    min-height: 50px;
+                    max-width: 229px;
+                    background: #FFF;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.397126);
+                    border-radius: 33.5px;
+                    padding: 15px 33px;
+                    right: 30px;
+                    bottom: 56px;
+
+                    p {
+                        font-size: 20px;
+                        line-height: 100%;
+                        padding-right: 6px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.footer {
+    max-width: 1920px;
+    background: $brown;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1460px;
+        margin: 0 auto;
+        padding: 80px 10px 60px;
+        color: #fff;
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 90px;
+                height: 90px;
+                margin-right: 22px;
+            }
+
+            &-text {
+                
+
+                h1 {
+                    font-family: 'SchoolBook';
+                    font-weight: 700;
+                    @include adaptiv-font (30, 20);
+                    line-height: 92%;
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    @include adaptiv-font (20, 16);
+                    line-height: 100%;
+                }
+            }
+        }
+
+        .footer-text-cards {
+            display: flex;
+            margin-top: 29px;
+            // margin-right: calc(158px / 1920px * 100%);
+
+            .footer-text-card {
+                width: 192px;
+                margin-right: 100px;
+
+                a {
+                    @include adaptiv-font (20, 16);
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .footer-block-social {
+            width: 314px;
+
+            .footer-install {
+                display: flex;
+                align-items: center;
+                padding-bottom: 30px;
+
+                & > :not(:last-child) {
+                    margin-right: 16px;
+                }
+
+            }
+
+            .footer-social-netw {
+                margin-bottom: 30px;
+
+                a {
+                    width: 40px;
+                    height: 40px; 
+                }
+                
+                a:not(:last-child) {
+                    padding-right: 47px;
+                }
+            }
+
+            .footer-contacts {
+                padding-bottom: 70px;
+
+                p {
+                    @include adaptiv-font (20, 16);
+                    line-height: 150%;
+                }
+            }
+
+            .footer-made {
+                display: flex;
+                align-items: flex-end;
+                p {
+                    @include adaptiv-font (20, 16);
+                    line-height: 150%; 
+
+                }
+            }
+        }
+    }
+}

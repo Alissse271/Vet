@@ -158,4 +158,418 @@ section {
   line-height: 125%;
 }
 
+.cards-container {
+  margin: 150px auto;
+  max-width: 1352px;
+}
+.cards-container .services-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+.cards-container .services-card-row:hover + i {
+  color: #59443F;
+}
+.cards-container .services-card {
+  position: relative;
+  max-width: 320px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  flex: 1 1 25%;
+  margin: 12px;
+}
+.cards-container .services-card-info {
+  display: flex;
+  flex-direction: column;
+}
+.cards-container .services-card-title {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  line-height: 133%;
+  color: #59443F;
+  padding-bottom: 22px;
+}
+.cards-container .services-card-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cards-container .services-card-subtitle p {
+  font-size: 20px;
+  line-height: 100%;
+  color: #59443F;
+}
+.cards-container .services-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.cards-container .services-card a:hover + .service-icons {
+  color: #59443F;
+}
+
+.comp-history-section {
+  max-width: 1920px;
+  background: #FBF8F8;
+}
+.comp-history-section .comp-history-container {
+  max-width: 1254px;
+  margin: 0 auto;
+}
+.comp-history-section .comp-history-container h1 {
+  font-family: "SchoolBook";
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #080606;
+  padding-bottom: 48px;
+}
+.comp-history-section .comp-history-container .history-container-link {
+  display: flex;
+}
+.comp-history-section .comp-history-container .history-container-link > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFC59E;
+  padding-right: 10px;
+}
+.comp-history-section .comp-history-container .history-container-link > img {
+  width: 10px;
+  height: 20px;
+}
+.comp-history-section .comp-history-container .comp-history-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 180px 0 100px;
+}
+.comp-history-section .comp-history-container .comp-history-info > p {
+  max-width: 497px;
+  color: #59443F;
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 36px;
+}
+.comp-history-section .comp-history-container .comp-specialists-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 206px;
+}
+.comp-history-section .comp-history-container .comp-specialists-info .specialists {
+  display: flex;
+  align-items: center;
+  padding-bottom: 36px;
+}
+.comp-history-section .comp-history-container .comp-specialists-info .specialists > a {
+  max-width: 178px;
+  margin-right: 15px;
+}
+.comp-history-section .comp-history-container .comp-specialists-info .specialists > a:last-child {
+  margin-right: 0;
+}
+.comp-history-section .comp-history-container .comp-specialists-info .specialists > a img {
+  width: 100%;
+}
+
+.work-time-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 316px auto;
+}
+.work-time-section h1 {
+  font-family: "SchoolBook";
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 76%;
+  color: #59443F;
+  padding-bottom: 20px;
+}
+.work-time-section p {
+  max-width: 716px;
+  font-size: 80px;
+  line-height: 138%;
+  color: #080606;
+}
+.work-time-section img {
+  position: absolute;
+  bottom: -157px;
+  right: 645px;
+}
+
+.advantages-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1640px;
+  margin: 0 auto 239px;
+}
+.advantages-section-container h1 {
+  font-family: "SchoolBook";
+  font-size: 40px;
+  line-height: 100%;
+  color: #080606;
+  padding-bottom: 104px;
+}
+.advantages-section-container .adv-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+.advantages-section-container .adv-cards-row .adv-card {
+  flex: 1 1 auto;
+  width: 33.333%;
+  max-width: 484px;
+  margin-right: 84px;
+  margin-bottom: 70px;
+}
+.advantages-section-container .adv-cards-row .adv-card:nth-child(3n) {
+  margin-right: 0px;
+}
+.advantages-section-container .adv-cards-row .adv-card-title h2 {
+  font-family: "SchoolBook";
+  font-size: 30px;
+  line-height: 138%;
+  color: #080606;
+  padding-bottom: 36px;
+}
+.advantages-section-container .adv-cards-row .adv-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-section-container .adv-cards-row .adv-card-info p {
+  max-width: 330px;
+  min-height: 150px;
+  color: #59443F;
+  font-size: 20px;
+  line-height: 150%;
+}
+.advantages-section-container .adv-cards-row .adv-card-info img {
+  align-self: center;
+  margin: 0 15px;
+}
+
+.new-app-section {
+  background: #FFC59E;
+}
+.new-app-section-container {
+  position: relative;
+  padding-top: 18.2291666667%;
+}
+.new-app-section-container .new-app-info {
+  margin-left: 11.9791666667%;
+  padding-bottom: 18.0208333333%;
+}
+.new-app-section-container .new-app-info p {
+  font-size: 30px;
+  line-height: 67%;
+  color: #fff;
+}
+.new-app-section-container .new-app-info h1 {
+  max-width: 826px;
+  font-family: "SchoolBook";
+  font-size: calc(24px + 56 * ((100vw - 320px) / 1600));
+  line-height: 138%;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.new-app-section-container .new-app-info .new-app-install {
+  display: flex;
+  align-items: center;
+}
+.new-app-section-container .new-app-info .new-app-install > :not(:last-child) {
+  margin-right: 16px;
+}
+.new-app-section-container .dog-img {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 170px;
+  right: 26.3541666667%;
+  max-width: 493px;
+}
+.new-app-section-container .dog-img img {
+  width: 100%;
+  height: 100%;
+}
+.new-app-section-container .app-phone-img {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 113px;
+  right: 14.2708333333%;
+  max-width: 425px;
+}
+.new-app-section-container .app-phone-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-section-container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 235px 10px 209px;
+}
+.contacts-section-container h1 {
+  font-family: "SchoolBook";
+  font-size: calc(24px + 16 * ((100vw - 320px) / 1600));
+  line-height: 100%;
+  color: #080606;
+  padding-bottom: 70px;
+}
+.contacts-section-container .contacts-block {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-section-container .contacts-block-info {
+  flex: 0 0 auto;
+  max-width: 484px;
+  padding-right: 26px;
+}
+.contacts-section-container .contacts-block-info-content {
+  padding-bottom: 40px;
+}
+.contacts-section-container .contacts-block-info-content:last-child {
+  padding-bottom: 0;
+}
+.contacts-section-container .contacts-block-info-content h2 {
+  font-family: "SchoolBook";
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+  line-height: 133%;
+  color: #080606;
+  padding-bottom: 20px;
+}
+.contacts-section-container .contacts-block-info-content-text {
+  display: flex;
+  align-items: center;
+  max-width: 384px;
+  padding-bottom: 15px;
+}
+.contacts-section-container .contacts-block-info-content-text:last-child {
+  padding-bottom: 0;
+}
+.contacts-section-container .contacts-block-info-content-text img {
+  width: 46px;
+  height: 46px;
+  margin-right: 20px;
+}
+.contacts-section-container .contacts-block-info-content-text p {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 150%;
+  color: #59443F;
+}
+.contacts-section-container .contacts-block .contacts-block-map .map-card {
+  position: relative;
+  max-width: 950px;
+}
+.contacts-section-container .contacts-block .contacts-block-map .map-card > img {
+  width: 100%;
+  height: 100%;
+}
+.contacts-section-container .contacts-block .contacts-block-map .map-card .yandex-location-link {
+  position: absolute;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  max-width: 229px;
+  background: #FFF;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.397126);
+  border-radius: 33.5px;
+  padding: 15px 33px;
+  right: 30px;
+  bottom: 56px;
+}
+.contacts-section-container .contacts-block .contacts-block-map .map-card .yandex-location-link p {
+  font-size: 20px;
+  line-height: 100%;
+  padding-right: 6px;
+  color: #000;
+}
+
+.footer {
+  max-width: 1920px;
+  background: #59443F;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 80px 10px 60px;
+  color: #fff;
+}
+.footer-container .footer-logo {
+  display: flex;
+  align-items: center;
+}
+.footer-container .footer-logo img {
+  width: 90px;
+  height: 90px;
+  margin-right: 22px;
+}
+.footer-container .footer-logo-text h1 {
+  font-family: "SchoolBook";
+  font-weight: 700;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+  line-height: 92%;
+  padding-bottom: 5px;
+}
+.footer-container .footer-logo-text p {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 100%;
+}
+.footer-container .footer-text-cards {
+  display: flex;
+  margin-top: 29px;
+}
+.footer-container .footer-text-cards .footer-text-card {
+  width: 192px;
+  margin-right: 100px;
+}
+.footer-container .footer-text-cards .footer-text-card a {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 150%;
+}
+.footer-container .footer-block-social {
+  width: 314px;
+}
+.footer-container .footer-block-social .footer-install {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer-container .footer-block-social .footer-install > :not(:last-child) {
+  margin-right: 16px;
+}
+.footer-container .footer-block-social .footer-social-netw {
+  margin-bottom: 30px;
+}
+.footer-container .footer-block-social .footer-social-netw a {
+  width: 40px;
+  height: 40px;
+}
+.footer-container .footer-block-social .footer-social-netw a:not(:last-child) {
+  padding-right: 47px;
+}
+.footer-container .footer-block-social .footer-contacts {
+  padding-bottom: 70px;
+}
+.footer-container .footer-block-social .footer-contacts p {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 150%;
+}
+.footer-container .footer-block-social .footer-made {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-container .footer-block-social .footer-made p {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 150%;
+}
+
 /*# sourceMappingURL=/style.97fcb138.css.map */
