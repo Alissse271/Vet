@@ -72,8 +72,8 @@ section {
 
             a {
                 @extend %tplstyle-sect-about-comp;
-            font-size: 20px;
-            color: $brown-light;
+                font-size: 20px;
+                color: $brown-light;
             }
         
             &:not(:last-child) {
@@ -111,7 +111,6 @@ section {
 
             .comp-name {
                 font-family: "SchoolBook Cyrillic", sans-serif;
-                // font-size: 80px;
                 @include adaptiv-font (80, 24);
                 line-height: 138%;
             }
@@ -132,20 +131,35 @@ section {
                 text-align: center;
             }
 
+            .phone-number-media {
+                display: none;
+                color: $brown;
+                font-weight: 700;
+                @include adaptiv-font (24, 16);
+                line-height: 125%;
+                margin-top: -20px;
+                margin-bottom: 20px;
+            }
+
             .comp-info-social {
                 margin-bottom: 80px;
 
                 a {
+                    display: inline-block;
+                    background-color: #FFF;
+                    border: transparent;
+                    border-radius: 50%;
                     width: 40px;
                     height: 40px; 
 
-                    // img {
-                    //     width: 100%;
-                    // }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
                 
                 a:not(:last-child) {
-                    padding-right: 50px;
+                    margin-right: 50px;
                 }
             }
 
@@ -157,7 +171,6 @@ section {
                 max-height: 100%;
                 opacity: .5;
                 z-index: -1;
-                // display: none;
                 visibility: hidden;
                 
             }
@@ -197,18 +210,19 @@ section {
     }
 }
 
+.services-section {
+    display: flex;
+    justify-content: center;
+}
+
 .cards-container {
-    margin: 150px auto;
-    max-width: 1352px;
+    margin: 150px 10px;
+    max-width: 1372px;
 
     .services-card-row {
         display: flex;
         flex-wrap: wrap;
-        margin: -12px;
-
-            &:hover + i {
-                color: $brown;
-            }
+        max-width: 1352px;
     }
 
     .services-card {
@@ -220,11 +234,35 @@ section {
         // width: 25%;
         flex: 1 1 25%;
         margin: 12px;
+
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(4n+1) {
+            margin-left: 0;
+        }
+
+        &:nth-child(10) > a > .services-card-info > .services-card-title,
+        &:nth-child(14) > a > .services-card-info > .services-card-title {
+            padding-bottom: 0; 
+            margin-bottom: -18px;
+        }
         
         &-info {
             display: flex;
             flex-direction: column; 
-            
+
+            &:hover {
+
+                & i {
+
+                    &::before {
+                        color: $brown;
+                    }
+                }
+            }
         }
 
         &-title {
@@ -233,6 +271,8 @@ section {
             line-height: 133%;
             color: $brown;
             padding-bottom: 22px;
+
+            
         }
 
         &-subtitle {
@@ -255,16 +295,8 @@ section {
             &:hover + .service-icons {
                 color: $brown;
             }
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            // right: 0;
-            // bottom: 0;
-            // z-index: 1;
         }
     }
-
-
 }
 
 .comp-history-section {
@@ -277,7 +309,7 @@ section {
 
         h1 {
             font-family: 'SchoolBook';
-            font-size: 40px;
+            @include adaptiv-font (40, 26);
             line-height: 100%;
             text-align: center;
             color: $black-text;
@@ -289,7 +321,7 @@ section {
 
             & > p {
                 font-weight: 700;
-                font-size: 20px;
+                @include adaptiv-font (20, 16);
                 line-height: 100%;
                 color: $orange;
                 padding-right: 10px;
@@ -353,41 +385,57 @@ section {
     position: relative;
     margin: 316px auto;
 
+    &-info {
+        max-width: 730px;
+    }
+
     h1 {
         font-family: 'SchoolBook';
         font-weight: 700;
-        font-size: 144px;
+        @include adaptiv-font (144, 30);
         line-height: 76%;
         color: $brown;
         padding-bottom: 20px;
     }
 
-    p {
-        
-        max-width: 716px;
-        font-size: 80px;
-        line-height: 138%;
-        color: $black-text;
+    &-text {
+        position: relative;
+    
+       p {
+            @include adaptiv-font (80, 26);
+            line-height: 138%;
+            color: $black-text;
+        } 
+    }
+
+    .bird-img {
+        position: absolute;
+        bottom: -157px;
+        right: calc(645px / 1920px * 100%);
+        max-width: 288px;
+        z-index: -1;
     }
 
     img {
-        position: absolute;
-        bottom: -157px;
-        right: 645px;
+        
+        width: 100%;
+        height: 100%;
     }
 }
-
+.advantages-section {
+    
+}
 .advantages-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
+    justify-content: center;
     max-width: 1640px;
     margin: 0 auto 239px;
 
     h1 {
         font-family: 'SchoolBook';
-        font-size: 40px;
+        @include adaptiv-font (40, 20);
         line-height: 100%;
         color: $black-text;
         padding-bottom: 104px;
@@ -396,11 +444,12 @@ section {
     .adv-cards-row {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0 10px;
 
         .adv-card {
-            flex: 1 1 auto;
-            width: 33.333%;
+            flex: 1 1 33.33%;
+            // width: 33.33%;
             max-width: 484px;
             margin-right: 84px;
             margin-bottom: 70px;
@@ -411,7 +460,7 @@ section {
 
             &-title h2 {
                 font-family: 'SchoolBook';
-                font-size: 30px;
+                @include adaptiv-font (30, 16);
                 line-height: 138%;
                 color: $black-text;
                 padding-bottom: 36px;
@@ -426,7 +475,7 @@ section {
                     max-width: 330px;
                     min-height: 150px;
                     color: $brown;
-                    font-size: 20px;
+                    @include adaptiv-font (20, 14);
                     line-height: 150%;
                 }
 
@@ -444,7 +493,7 @@ section {
 
     &-container {
         position: relative;
-        padding-top: calc(350px / 1920px * 100%);
+        padding-top: calc(250px / 1920px * 100%);
 
         .new-app-info {
             margin-left: calc(230px / 1920px * 100%);
@@ -458,7 +507,6 @@ section {
 
             h1 {
                 max-width: 826px;
-                //  1840px media max-width: 706px;
                 font-family: 'SchoolBook';
                 @include adaptiv-font (80, 24);
                 line-height: 138%;
@@ -485,8 +533,6 @@ section {
             max-width: 493px;
 
             img {
-
-                // media 70%
                 width: 100%;
                 height: 100%;
             }
@@ -632,7 +678,6 @@ section {
             }
 
             &-text {
-                
 
                 h1 {
                     font-family: 'SchoolBook';
@@ -652,7 +697,6 @@ section {
         .footer-text-cards {
             display: flex;
             margin-top: 29px;
-            // margin-right: calc(158px / 1920px * 100%);
 
             .footer-text-card {
                 width: 192px;

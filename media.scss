@@ -1,3 +1,133 @@
+@media (max-width: 1836px) {
+    .new-app-section {
+        .new-app-section-container {
+           .new-app-info {
+                h1 {
+                    max-width: 706px;
+                } 
+            }
+
+            .dog-img {
+    
+                img {
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+
+            .app-phone-img {
+
+                img {
+                    width: 70%;
+                    height: 70%;
+                }  
+            }
+        } 
+    }
+}
+
+@media (max-width: 1639px) {
+    .advantages-section-container {
+        max-width: 1620px;
+        margin: 0 auto 120px;
+
+        .adv-cards-row .adv-card {
+            width: 50%;
+        }
+    }
+
+    .advantages-section-container .adv-cards-row .adv-card:nth-child(3n) {
+        margin-right: 84px;
+    }
+
+    .advantages-section-container .adv-cards-row .adv-card:nth-child(2n),
+    .advantages-section-container .adv-cards-row .adv-card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1516px) {
+    .new-app-section {
+        .new-app-section-container {
+           .new-app-info {
+                h1 {
+                    max-width: 600px;
+                } 
+            }
+        } 
+    }
+}
+
+@media (max-width: 1420px) {
+    .work-time-section {
+        margin: 200px auto 250px;
+
+        &-info {
+            max-width: 630px;
+        }
+    }
+}
+
+@media (max-width: 1372px) {
+
+    .cards-container {
+       .services-card-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1008px;
+        }
+        .services-card {
+            flex: 1 1 33.33%;
+
+            &:nth-child(4n) {
+                margin-right: 12px;
+            }
+
+            &:nth-child(4n+1) {
+                margin-left: 12px;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(3n+1) {
+                margin-left: 0;
+            }
+        } 
+    } 
+}
+
+@media (max-width: 1316px) {
+    .new-app-section {
+        .new-app-section-container {
+           .new-app-info {
+                h1 {
+                    max-width: 540px;
+                } 
+            }
+
+            .dog-img {
+                max-width: 400px;
+
+                img {
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+
+            .app-phone-img {
+                max-width: 350px;
+
+                img {
+                    width: 60%;
+                    height: 60%;
+                }  
+            }
+        } 
+    }
+}
+
 @media (max-width: 1280px) {
     .header {
         margin: 35px 50px 0;
@@ -36,10 +166,103 @@
     }
 }
 
+@media (max-width: 1240px) {
+    .footer {
+        &-container {
+            flex-direction: column;
+            padding: 60px 10px 60px;
+
+            .footer-text-cards {
+                justify-content: space-between;
+            }
+
+            .footer-block-social {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 20px;
+
+                .footer-install {
+                    padding-bottom: 0;
+                }
+                .footer-social-netw {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0;
+                }    
+                .footer-contacts {
+                    padding-bottom: 0;
+                }    
+                .footer-made {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .new-app-section {
+        .new-app-section-container {
+           .new-app-info {
+            
+                p {
+                    line-height: 150%;
+                }
+                
+                h1 {
+                    max-width: 450px;
+                } 
+            }
+
+            .dog-img {
+                display: none;
+            }
+
+            .app-phone-img {
+                display: none; 
+            }
+        } 
+    }
+}
+
+@media (max-width: 1028px) {
+
+    .cards-container {
+       .services-card-row {
+        max-width: 664px;
+    }
+    .services-card {
+        flex: 1 1 50%;
+
+        &:nth-child(4n) {
+            margin-right: 12px;
+        }
+
+        &:nth-child(4n+1) {
+            margin-left: 12px;
+        }
+        &:nth-child(3n) {
+            margin-right: 12px;
+        }
+
+        &:nth-child(3n+1) {
+            margin-left: 12px;
+        }
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+
+        &:nth-child(odd) {
+            margin-left: 0;
+        }
+    } 
+    }
+}
+
 @media (max-width: 1008px) {
 
     .header {
-    
         > a {
             pointer-events: auto;
             cursor: pointer;
@@ -71,7 +294,7 @@
         margin-bottom: 20px;
         
         a:not(:last-child) {
-            padding-right: 30px;
+            margin-right: 30px;
         }
     } 
     .about-comp-section .about-comp-info .block-comp-contact {
@@ -82,27 +305,164 @@
             bottom: 20px;
         }
     }  
+    .work-time-section {
+        &-info {
+            max-width: 450px;
+        }
+    }
+
+    .advantages-section-container {
+        margin: 0 auto 50px;
+
+        h1 {
+            padding-bottom: 50px;
+        }
+        
+        .adv-cards-row .adv-card {
+            margin-bottom: 20px;
+            margin-right: 40px;
+        }
+    }   
+    
+    .contacts-section-container {
+        padding: 100px 10px 100px;
+
+        h1 {
+            padding-bottom: 40px;
+        }
+
+        .contacts-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-info {
+                display: flex;
+                max-width: 100%;
+                padding-right: 0;
+            }
+            .contacts-block-map {
+                .map-card {
+                    max-width: 100%;
+                }
+            }
+        }  
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        &-container {
+            padding: 60px 10px 60px;
+
+            .footer-text-cards {
+                .footer-text-card {
+                    margin-right: 20px;
+                }
+            }
+
+            .footer-block-social {
+                flex-direction: column;
+
+                & > div {
+                    margin-bottom: 20px;
+                }
+
+                .footer-social-netw {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
 
     .about-comp-section .about-comp-info .block-comp-info {
     
+        .phone-number-media {
+            display: block;
+        }
+
         > img {
-            // display: initial;
-            visibility: visible;
-            
+            visibility: visible; 
         }
     }
 
     .about-comp-section .about-comp-info .block-comp-contact {
         display: none;
     }
+
+    .comp-history-section{
+
+        .comp-history-container {
+
+            h1 {
+                padding-bottom: 20px;
+            }
+
+            .comp-history-info {
+                padding: 50px 0 50px;
+
+                & > p {
+                    padding: 0 10px 36px;
+                }
+            }
+
+            .comp-specialists-info {
+                padding: 0 0 50px;
+            }
+        }
+    }
+    .comp-history-section > .comp-history-container > .comp-specialists-info > .specialists > a:nth-child(n+5):nth-child(-n+7) {
+        display: none;
+    }
+    .work-time-section {
+        margin: 100px auto 200px;
+
+        .bird-img {
+            bottom: -100px;
+            max-width: 200px;
+        }
+    }
+
+    .advantages-section-container .adv-cards-row .adv-card {
+        flex: 1 1 100%;
+
+        &:nth-child(n) {
+            margin-right: 0;
+        }
+
+        &-title {
+            h2 {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 684px) {
+
+    .cards-container {
+        margin: 50px 10px;
+
+       .services-card-row {
+        max-width: 664px;
+    }
+    .services-card {
+        flex: 1 1 100%;
+
+        &:nth-child(n) {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    } 
+    }
 }
 
 @media (max-width: 600px) {
     .header {
-        margin: 15px 30px 0;
+        margin: 15px 5px 0;
     }
 
     .about-comp-section {
@@ -113,12 +473,11 @@
         display: flex;
         justify-content: space-between;
         max-width: 600px;
-        width: 100%;
-        margin-left: 70px;
+        width: 98%;
+        margin-left: 5px;
         margin-top: 20px;
 
         &-number{
-            margin-right: 20px;
             
         &:not(:last-child) {
             padding: 10px 14px 0;
@@ -132,8 +491,129 @@
         }
     }
 
-    .about-comp-section .about-comp-info .block-comp-info {
-        margin-top: 40px;
+    .about-comp-section .about-comp-info {
+
+        margin-left: 20px;
+    
+        .block-comp-info {
+            margin-top: 40px;
+        }
+    }
+
+    .contacts-section-container {
+        padding: 70px 10px 70px;
+
+        h1 {
+            padding-bottom:30px;
+        }
+
+        .contacts-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-info {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                padding-right: 0;
+
+                &-content {
+                    padding-bottom: 20px;
+
+                    &-text {
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+            .contacts-block-map {
+                .map-card {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+
+                    .yandex-location-link {
+                        position: relative;
+                        margin-top: 15px;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }  
     }
     
+}
+
+@media (max-width: 576px) {
+    .work-time-section {
+        margin: 50px auto 150px;
+
+        &-info {
+            max-width: 380px;
+            padding: 0 15px;
+        }
+
+        .bird-img {
+            right: calc(400px / 1920px * 100%);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .new-app-section {
+        .new-app-section-container {
+            .new-app-info {
+
+                h1 {
+                    max-width: 450px;
+                } 
+
+                .new-app-install {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    &> :not(:last-child) {
+                        margin-right: 0;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        } 
+    }
+    .footer {
+        &-container {
+            padding: 20px 10px 20px;
+
+            .footer-text-cards {
+                flex-direction: column;
+
+                .footer-text-card {
+                    width: 100%;
+
+                    &:first-child {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+    
+            .footer-block-social {
+                flex-direction: column;
+
+                & > div {
+                    margin-bottom: 20px;
+                }
+
+                .footer-install {
+
+                    & > :not(:last-child) {
+                        margin-right: 0;
+                    }
+    
+                }
+            }
+        }
+    }
 }

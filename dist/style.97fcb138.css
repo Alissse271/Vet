@@ -110,15 +110,32 @@ section {
   max-width: 285px;
   text-align: center;
 }
+.about-comp-section .about-comp-info .block-comp-info .phone-number-media {
+  display: none;
+  color: #59443F;
+  font-weight: 700;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+  line-height: 125%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
 .about-comp-section .about-comp-info .block-comp-info .comp-info-social {
   margin-bottom: 80px;
 }
 .about-comp-section .about-comp-info .block-comp-info .comp-info-social a {
+  display: inline-block;
+  background-color: #FFF;
+  border: transparent;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
 }
+.about-comp-section .about-comp-info .block-comp-info .comp-info-social a img {
+  width: 100%;
+  height: 100%;
+}
 .about-comp-section .about-comp-info .block-comp-info .comp-info-social a:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .about-comp-section .about-comp-info .block-comp-info > img {
   position: absolute;
@@ -158,17 +175,19 @@ section {
   line-height: 125%;
 }
 
+.services-section {
+  display: flex;
+  justify-content: center;
+}
+
 .cards-container {
-  margin: 150px auto;
-  max-width: 1352px;
+  margin: 150px 10px;
+  max-width: 1372px;
 }
 .cards-container .services-card-row {
   display: flex;
   flex-wrap: wrap;
-  margin: -12px;
-}
-.cards-container .services-card-row:hover + i {
-  color: #59443F;
+  max-width: 1352px;
 }
 .cards-container .services-card {
   position: relative;
@@ -179,9 +198,22 @@ section {
   flex: 1 1 25%;
   margin: 12px;
 }
+.cards-container .services-card:nth-child(4n) {
+  margin-right: 0;
+}
+.cards-container .services-card:nth-child(4n+1) {
+  margin-left: 0;
+}
+.cards-container .services-card:nth-child(10) > a > .services-card-info > .services-card-title, .cards-container .services-card:nth-child(14) > a > .services-card-info > .services-card-title {
+  padding-bottom: 0;
+  margin-bottom: -18px;
+}
 .cards-container .services-card-info {
   display: flex;
   flex-direction: column;
+}
+.cards-container .services-card-info:hover i::before {
+  color: #59443F;
 }
 .cards-container .services-card-title {
   font-family: "SchoolBook";
@@ -219,7 +251,7 @@ section {
 }
 .comp-history-section .comp-history-container h1 {
   font-family: "SchoolBook";
-  font-size: 40px;
+  font-size: calc(26px + 14 * ((100vw - 320px) / 1600));
   line-height: 100%;
   text-align: center;
   color: #080606;
@@ -230,7 +262,7 @@ section {
 }
 .comp-history-section .comp-history-container .history-container-link > p {
   font-weight: 700;
-  font-size: 20px;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   line-height: 100%;
   color: #FFC59E;
   padding-right: 10px;
@@ -281,36 +313,48 @@ section {
   position: relative;
   margin: 316px auto;
 }
+.work-time-section-info {
+  max-width: 730px;
+}
 .work-time-section h1 {
   font-family: "SchoolBook";
   font-weight: 700;
-  font-size: 144px;
+  font-size: calc(30px + 114 * ((100vw - 320px) / 1600));
   line-height: 76%;
   color: #59443F;
   padding-bottom: 20px;
 }
-.work-time-section p {
-  max-width: 716px;
-  font-size: 80px;
+.work-time-section-text {
+  position: relative;
+}
+.work-time-section-text p {
+  font-size: calc(26px + 54 * ((100vw - 320px) / 1600));
   line-height: 138%;
   color: #080606;
 }
-.work-time-section img {
+.work-time-section .bird-img {
   position: absolute;
   bottom: -157px;
-  right: 645px;
+  right: 33.59375%;
+  max-width: 288px;
+  z-index: -1;
+}
+.work-time-section img {
+  width: 100%;
+  height: 100%;
 }
 
 .advantages-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 1640px;
   margin: 0 auto 239px;
 }
 .advantages-section-container h1 {
   font-family: "SchoolBook";
-  font-size: 40px;
+  font-size: calc(20px + 20 * ((100vw - 320px) / 1600));
   line-height: 100%;
   color: #080606;
   padding-bottom: 104px;
@@ -318,11 +362,11 @@ section {
 .advantages-section-container .adv-cards-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0 10px;
 }
 .advantages-section-container .adv-cards-row .adv-card {
-  flex: 1 1 auto;
-  width: 33.333%;
+  flex: 1 1 33.33%;
   max-width: 484px;
   margin-right: 84px;
   margin-bottom: 70px;
@@ -332,7 +376,7 @@ section {
 }
 .advantages-section-container .adv-cards-row .adv-card-title h2 {
   font-family: "SchoolBook";
-  font-size: 30px;
+  font-size: calc(16px + 14 * ((100vw - 320px) / 1600));
   line-height: 138%;
   color: #080606;
   padding-bottom: 36px;
@@ -345,7 +389,7 @@ section {
   max-width: 330px;
   min-height: 150px;
   color: #59443F;
-  font-size: 20px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
   line-height: 150%;
 }
 .advantages-section-container .adv-cards-row .adv-card-info img {
@@ -358,7 +402,7 @@ section {
 }
 .new-app-section-container {
   position: relative;
-  padding-top: 18.2291666667%;
+  padding-top: 13.0208333333%;
 }
 .new-app-section-container .new-app-info {
   margin-left: 11.9791666667%;
